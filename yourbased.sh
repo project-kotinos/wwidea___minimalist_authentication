@@ -12,4 +12,4 @@ chmod +x ./cc-test-reporter
 # script
 bundle exec rails test
 # after_script:
-./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+./cc-test-reporter after-build --exit-code 0
