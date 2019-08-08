@@ -1,0 +1,16 @@
+build_targets:
+- commands:
+  - chmod +x yourbased.sh
+  - sh ./yourbased.sh
+  container:
+    image: yourbase/yb_ubuntu:16.04
+  name: default
+  environment:
+  - CC_TEST_REPORTER_ID=adb2c8990bb2f4b9a88ebc8c6c15a3923a0aa08c6da4ccb2dfdc91db56b9b0d9
+ci:
+  builds:
+  - build_target: default
+    name: default
+dependencies:
+  build:
+  - ruby:2.5.1
