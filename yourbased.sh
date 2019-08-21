@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -ex
 export DEBIAN_FRONTEND=noninteractive
+export FOO=bar
 apt-get update && apt-get install -y tzdata
 gem install bundler -v 2.0.1
 # install
